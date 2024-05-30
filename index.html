@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue Dynamics</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/03/44/12/17/360_F_344121758_8iL4qMDmRes2DHAcVNSmmjUScN4f8p47.jpg">
+    <!-- Font awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li class="scrolling"><a href="#HOME">Home</a></li>
+          <li class="scrolling"><a href="#BRANDS">Brands</a></li>
+          <li class="scrolling"><a href="#EXPLORE">Products</a></li>
+          <li class="scrolling"><a href="#WHYAS">Why Us</a></li>
+          <li class="scrolling"><a href="#REVIEW">Review</a></li>
+        </ul>        
+        <ul class="gridLayout">
+          <li class="logoImage"><img src="Assests/logo.svg" alt=""></li>
+          <li class="hideOnMobile"><a href="#HOME">Home</a></li>
+          <li class="hideOnMobile"><a href="#BRANDS">Brands</a></li>
+          <li class="hideOnMobile"><a href="#EXPLORE">Products</a></li>
+          <li class="hideOnMobile"><a href="#WHYAS">Why Us</a></li>
+          <li class="hideOnMobile"><a href="#REVIEW">Review</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    <!-- Herosection -->
+    <section id="HOME">
+        <div class="gridLayout">
+            <div class="HeroSections">
+                 <div class="HerosectionContent" data-aos="fade-up">
+                   <h1>Ready For Impact</h1>
+                   <p>The epitome of automotive exhilaration, designed for speed, precision, and dynamic performance Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
+                   <a href="#EXPLORE"><button>Explore Now</button></a> 
+                 </div>
+                 <div class="HerosectionImage" data-aos="fade-up">
+                     <img src="Assests/Herosectionimage.svg" alt="">
+                 </div>
+            </div>
+        </div>
+    </section>
+        <!-- Brands  section -->
+    <section id="BRANDS">
+       <div class="gridLayout">
+          <div class="brands"> 
+            <h2 data-aos="fade-up">Brands</h2>
+             <div class="brandsImages" data-aos="fade-up">
+                <img src="Assests/Component7.svg" alt="">
+                <img src="Assests/Component2.svg" alt="">
+                <img src="Assests/Component3.svg" alt="">
+                <img src="Assests/Component4.svg" alt="">
+                <img src="Assests/Component7.svg" alt="">
+                <img src="Assests/Component1.svg" alt="">
+             </div>
+          </div>
+       </div>
+    </section>
+       <!-- Explore -->
+     <section id="EXPLORE">
+        <div class="gridLayout">
+           <div class="ExploreSection">
+                <h2 data-aos="fade-up">Explore</h2>
+                 <div id="toggleButtonGroup" data-aos="fade-up">
+                    <button class="active" value="all" onclick="setToggle('all')" id="ButtonOne">All</button>
+                      <button value="stabilizer" onclick="setToggle('stabilizer')" id="ButtonTwo">Steering Stabilizer</button>
+                      <button value="HeimUca" onclick="setToggle('HeimUca')" id="ButtonThree">HIEM</button>
+                      <button value="bushingUca" onclick="setToggle('bushingUca')" id="ButtonFour">Bushing UCA</button>
+                      <button value="coilSpring" onclick="setToggle('coilSpring')" id="ButtonFive">Coil Spring</button>
+                 </div>
+                 <div id="cardContainer">
+                    <!-- <div class="Cards">
+                        <div>
+                             <img src="Assests/Image1.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Steering Stabilizer</h3>
+                            <h4>Model Year <span>2023</span></h4>
+                            <h5>Model <span>LC76</span></h5>
+                            <h6>Fuel <span>Petrol</span> </h6>
+                            <h2>36,650</h2>
+                            <button>View Product</button> 
+                        </div> 
+                    </div> -->
+                 </div>
+           </div>
+        </div>
+      </section>  
+       <!-- Why Section -->
+       <section id="WHYAS">
+       <div class="gridLayout"> 
+             <div class="whyAs">
+                 <div class="whyAsImage" data-aos="fade-up">
+                      <img src="Assests/car1.svg" alt="">
+                 </div>
+                 <div class="whyAsContent" data-aos="fade-up">
+                       <h2>Customize Your Vehicle</h2>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, nesciunt harum vel alias exercitationem commodi ipsa ea debitis voluptas non veritatis recusandae mollitia nobis illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eaque. </p>
+                       <a href="#"> <button>Explore Now</button></a>
+                 </div>
+             </div>
+       </div>
+      </section>
+       <!-- WhyAsTwo -->
+       <section>
+       <div class="gridLayout">
+              <div class="whyAsTwo">
+                   <div class="whyAsImageTwo" data-aos="zoom-in">
+                           <img src="Assests/car2.svg
+                           " alt="">
+                   </div>
+                   <div class="whyAsContentTwo" data-aos="zoom-in"> 
+                       <h2>Why Rougue Dynamics</h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt accusamus pariatur dolor consequatur odit debitis animi? Voluptates ex rerum, obcaecati qui dicta reprehenderit, beatae culpa aut sequi vel architecto! Culpa fugiat temporibus placeat delectus sunt magnam quidem tempore neque.
+                       </p>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet iusto dicta vero corrupti rem eos laborum debitis autem. Cum quos nisi quas dolores doloribus architecto a earum labore illum quod tempore, itaque nam quis blanditiis iure assumenda quasi ipsum.</p>
+                   </div>
+              </div>
+       </div>
+      </section>
+       <!-- Testimonials -->
+       <section id="REVIEW">
+       <div class="gridLayout">
+            <div class="Testimonials">
+                <h2 data-aos="fade-up">Testimonials</h2>
+                <h3 data-aos="fade-up">What people say about us?</h3>
+                <div class="reviewSection" data-aos="fade-up">
+                  <div class="reviewImage">
+                    <img src="Assests/review1.svg" alt="" class="ReviewerImage">
+                  </div>
+                  <div class="reviewContent">
+                       <h4>5.0 <span>stars</span></h4>
+                       <h6 class="StartRating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </h6>
+                       <p class="ActualReview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam omnis voluptatibus perferendis magnam! Labore voluptas perferendis omnis ea non iusto? Esse aspernatur fuga placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corrupti.</p>
+                       <h5 class="ReviwerName">Charlie Johnson</h5>
+                       <h6 class="ReviewerRole">Chennai, India</h6>
+                  </div>
+                </div>
+                <div class="ArrowMark">
+                    <i class="fa fa-chevron-circle-left arrow" id="btn-left"></i>
+                    <i class="fa fa-chevron-circle-right arrow" id="btn-right"></i>
+                </div>
+            </div>
+       </div>
+      </section>
+       <!-- Footer -->
+       <footer>
+          <div class="gridLayout">
+            <div class="footerSection">
+                 <div class="footerSectionImage">
+                   <img src="Assests/logofooter.svg" alt="">
+                 </div>
+                 <div class="Followus">
+                    <h2>Follow Us</h2>
+                    <div>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                 </div>
+                 <div class="AddressLinks">
+                    <h2>Address</h2>
+                      <h3><i class="fa-solid fa-location-dot"></i>&nbsp; 25566 Hc 1, Glenallen,  99588UAE, UAE</h3>
+                      <h3><i class="fa-solid fa-phone"></i>&nbsp;  +603 4784 273 12</h3>
+                      <h3><i class="fa-solid fa-envelope"></i> &nbsp;  abc123@gmail.com</h3>
+                 </div>
+            </div>
+          </div>
+       </footer>
+      <script src="script.js"></script> 
+</body>
+</html>
