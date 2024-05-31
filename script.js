@@ -72,6 +72,17 @@ const products=[
  category:"stabilizer"
 },
 {
+  id:1,
+  img:"./Assests/Image1.svg",
+  names:"Steering Stabilizer",
+  modelYear:2023,
+  model:"LC76",   
+  fuel:"Petrol",
+  price:"$ 36650",
+  button:"#",
+  category:"stabilizer"
+ },
+   {
     id:2,
     img:"./Assests/Image2.svg",
     names:"HEIM UCA",
@@ -92,6 +103,17 @@ const products=[
     price:"$ 36650",
     button:"#",
     category:"bushingUca"
+   },
+   {
+    id:4,
+    img:"./Assests/Image1.svg",
+    names:"DIA",
+    modelYear:2023,
+    model:"LC76",   
+    fuel:"Petrol",
+    price:"$ 36650",
+    button:"#",
+    category:"coilSpring"
    },
    {
     id:4,
@@ -127,6 +149,28 @@ const products=[
     category:"HeimUca"
    },
    {
+    id:6,
+    img:"./Assests/Image2.svg",
+    names:"HEIM UCA",
+    modelYear:2023,
+    model:"LC76",   
+    fuel:"Petrol",
+    price:"$ 36650",
+    button:"#",
+    category:"HeimUca"
+   },
+   {
+    id:7,
+    img:"./Assests/Image3.svg",
+    names:"DIA",
+    modelYear:2023,
+    model:"LC76",   
+    fuel:"Petrol",
+    price:"$ 36650",
+    button:"#",
+    category:"bushingUca"
+   },
+   {
     id:7,
     img:"./Assests/Image3.svg",
     names:"DIA",
@@ -151,17 +195,29 @@ const products=[
 ];
 
 // Project section code
-let toggle = 'all';
+let toggle = 'stabilizer';
 function setToggle(value) {
   toggle = value;
   render();
+  setActiveButton();
 }
+function setActiveButton() {
+  const buttons = document.querySelectorAll('.toggle-button');
+  buttons.forEach(button => {
+      if (button.value === toggle) {
+          button.classList.add('active');
+      } else {
+          button.classList.remove('active');
+      }
+  });
+}
+
 function render() {
   const cardContainer = document.getElementById("cardContainer");
   cardContainer.innerHTML = '';
 
   products.forEach(product => {
-    if (toggle === 'all' || product.category === toggle) {
+    if (product.category === toggle) {
       const Cards = document.createElement("div");
       Cards.classList.add("Cards");
       Cards.setAttribute("data-aos","fade-up");
@@ -182,7 +238,8 @@ function render() {
     }
   });
 }
-render(); // Initial render
+// render(); // Initial render
+setToggle('stabilizer');
 
 //AOS animation
 AOS.init();

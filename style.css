@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Aero';
+    src: url('Aero.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -42,9 +48,9 @@ html{
     display: flex;
     align-items: center;
     color: black;
-    font-size: 15px;
-    font-family:"Poppins", sans-serif;
-    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Aero', sans-serif;
+    font-weight: 400;
   }
   nav a:hover{
     background-color: #f0f0f0;
@@ -73,9 +79,9 @@ html{
   .sidebar a{
     width: 100%;
     color: black;
-    font-size: 15px;
-    font-family:"Poppins", sans-serif;
-    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Aero', sans-serif;
+    font-weight: 400;
   }
   .menu-button{
     display: none;
@@ -98,7 +104,7 @@ html{
   }
   .HerosectionContent h1{
     font-size: 54px;
-    font-family: "Russo One", sans-serif; 
+    font-family: 'Aero', sans-serif;
     color: #E5AC08;
     font-style: italic;
   }
@@ -142,16 +148,26 @@ html{
     text-align: center;
     margin-top:70px;
     margin-bottom: 30px;
-    background-color: rgb(207, 207, 207);
-    width: 18%;
+    background-color:rgb(240, 239, 239);
+    width: 14%;
     padding: 10px 20px;
-    border-radius: 20px;
     margin-right: auto;
     margin-left: auto;
     font-family:"Poppins", sans-serif;
     font-size: 18px;
-    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    font-weight: 600;
+    position: relative;
+    z-index: 50;
   }
+  .HR p{
+   border: 1px solid rgb(209, 205, 205);
+   width: 35%;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   bottom: 50px;
+   z-index: 40;
+  }  
   .brandsImages{
     display: flex;
     width: 100%;
@@ -161,7 +177,7 @@ html{
     gap: 25px;
   }
 .brandsImages img{
-    width: 10%;
+    width: 5%;
     position: relative;
     bottom: 0;
 }
@@ -170,15 +186,16 @@ html{
     text-align: center;
     margin-top:50px;
     margin-bottom: 30px;
-    background-color: rgb(207, 207, 207);
-    width: 18%;
+    background-color: rgb(240, 239, 239);
+    width: 14%;
+    font-weight: 600;
     padding: 10px 20px;
-    border-radius: 20px;
     margin-right: auto;
     margin-left: auto;
     font-family:"Poppins", sans-serif;
     font-size: 18px;
-    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    position: relative;
+    z-index: 50;
 }
 #toggleButtonGroup{
     display: flex;
@@ -186,7 +203,7 @@ html{
     width: 100%;
     justify-content: center;
     margin-bottom: 25px;
-    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    gap: 10px;
 }
 #ButtonOne,#ButtonTwo,#ButtonThree,#ButtonFour,#ButtonFive{
 padding: 10px 12px;
@@ -196,10 +213,12 @@ font-weight: 500;
 color: black;
 cursor: pointer;
 outline: none;
+border: none;
+border-radius: 15px;
 }
 #ButtonOne:hover,#ButtonTwo:hover,#ButtonThree:hover,#ButtonFour:hover,#ButtonFive:hover{
- background-color: #0163FD;
- color: white;
+ background-color: #E5AC08;
+ color: black;
  transition: 0.3s;
  border: none;
 }
@@ -219,7 +238,7 @@ outline: none;
     background-color: whitesmoke;   
     width: 30%;
     border-radius: 20px;
-    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.2));
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .Cards:hover{
@@ -249,33 +268,39 @@ outline: none;
  font-size: 20px;
  font-weight: 600;
  color: black;
+ text-align: center;
+ margin-bottom: 12px;
 }
 .ProductDetails p{
 font-family:"Poppins", sans-serif;
 font-size: 16px;
 font-weight: 300;
 color: black;
+text-align: center;
 }
 .ProductDetails h6{
     font-family:"Poppins", sans-serif;
  font-size: 18px;
  font-weight: 600;
  color: black;
+ text-align: center;
 }
 .ProductDetails button{
-    margin-top: 15px;
-    padding: 10px 15px;
+    margin-top: 20px;
+    padding: 9px 14px;
     font-family:"Poppins", sans-serif;
  font-size: 16px;
- font-weight: 500;
- color:white;
- background-color: black;
+ font-weight: 600;
+ color:black;
+ background-color: #E5AC08;
  border: none;
- border-radius: 20px;
+ border-radius: 10px;
  cursor: pointer;
+ text-align: center;
 }
 .ProductDetails button:hover{
     background-color: #0163FD;
+    color: white;
     transition: 0.3s;
 }
 
@@ -309,7 +334,7 @@ color: black;
 }
 .whyAsContent h2{
     font-size: 35px;
-    font-family: "Russo One", sans-serif; 
+    font-family: 'Aero', sans-serif;
     color: black;
     font-style: italic;
 }
@@ -364,7 +389,7 @@ color: black;
 }
 .whyAsContentTwo h2{
     font-size: 40px;
-    font-family: "Russo One", sans-serif; 
+    font-family: 'Aero', sans-serif; 
     color: #E5AC08;
     font-style: italic;
 }
@@ -381,7 +406,7 @@ color: black;
 }
 .Testimonials h2{
     font-size: 30px;
-    font-family: "Russo One", sans-serif; 
+    font-family: 'Aero', sans-serif;
     color: #E5AC08;
     font-weight: 800;
     font-style: italic;
@@ -507,16 +532,17 @@ footer{
 }
 .Followus h2{
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     font-family:"Poppins", sans-serif;
     font-weight: 700;
 }
 .fa-square-facebook,.fa-square-x-twitter,.fa-instagram,.fa-youtube{
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     font-family:"Poppins", sans-serif;
     font-weight: 700;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .AddressLinks{
     width: 30%;
@@ -526,9 +552,10 @@ footer{
 }
 .AddressLinks h2{
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     font-family:"Poppins", sans-serif;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 .AddressLinks h3{
   color: white;
@@ -643,6 +670,9 @@ footer{
     .Cards{
         width: 45%;
     }
+    .HR p{
+        width: 60%;
+    }
   }
   @media screen and (max-width:500px){
     .logoImage img{
@@ -656,10 +686,13 @@ footer{
     .Cards{
         width: 100%;
     }
+    .HR p{
+        width: 70%;
+    }
   }
   @media screen and (max-width: 400px){
      #toggleButtonGroup{
-        flex-direction: column;
+        flex-wrap: wrap;
      }
     .sidebar{
       width: 100%;
