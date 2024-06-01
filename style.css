@@ -689,6 +689,9 @@ footer{
     .HR p{
         width: 70%;
     }
+    .imageNine,.imageTen,.imageEleven{
+        display: none;
+    }
   }
   @media screen and (max-width: 400px){
      #toggleButtonGroup{
